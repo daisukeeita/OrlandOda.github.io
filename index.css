@@ -105,24 +105,52 @@ header {
     font-size: 3rem;
 }
 
+#social-links {
+    display: flex;
+}
+
+#fb-link, #github-link {
+    position: relative;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#fb-link span, #github-link span  {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    bottom: 0;
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.63);
+    visibility: hidden;
+}
+
+#fb-link span {
+    left: -1rem;
+    width: 8.9rem;
+}
+
+#fb-link span::after, #github-link span::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+#fb-link:hover span, #github-link:hover span {
+    visibility: visible;
+}
+
 #social-links a img{
     margin: 3rem 1rem;
     height: 5rem;
     width: 5rem;
-}
-
-#speech-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem 0;
-    background-color: transparent;
-    color: whitesmoke;
-}
-
-.speech > strong, p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
 }
 
 .portfolio-head {
