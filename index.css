@@ -147,7 +147,7 @@ header {
     visibility: visible;
 }
 
-#social-links a img{
+#fb-link a img, #github-link a img{
     margin: 3rem 1rem;
     height: 5rem;
     width: 5rem;
