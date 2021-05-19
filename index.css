@@ -315,12 +315,14 @@ header {
     border-radius: 1rem;
     box-shadow: 1px 1px 4px cadetblue;
     animation: hover-out 500ms linear;
+    transition: transform 200ms;
 }
 
 #project-logistikus:hover, #project-luxe:hover, #project-jeeves:hover, #projet-pawnhero:hover {
     background-color: tomato;
     color: whitesmoke;
     animation: hover-in 500ms ease-in-out;
+    transform: scale(1.1);
 }
 
 @keyframes hover-in {
