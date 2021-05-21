@@ -72,21 +72,21 @@ animate();
 
 // Changing the name on hover
 
-let display = document.getElementsByClassName('bio-name');
+// let display = document.getElementsByClassName('bio-name');
 
-for (let i = 0; i < display.length; i++) {
-    display[i].addEventListener('mouseover', changeDisplay);
-    display[i].addEventListener('mouseout', defaultDisplay);
+// for (let i = 0; i < display.length; i++) {
+//     display[i].addEventListener('mouseover', changeDisplay);
+//     display[i].addEventListener('mouseout', defaultDisplay);
 
-    function changeDisplay() {
-        display[i].textContent = `Hey! My name is Orland Oda and I am from the Philippines! I love programming, as well as games, learning new things, and being adventurous! Take a look at my projects or my past work below and feel free to get in touch.`;
-        display[i].style.textAlign = 'center';
-    }
+//     function changeDisplay() {
+//         display[i].textContent = `Hey! My name is Orland Oda and I am from the Philippines! I love programming, as well as games, learning new things, and being adventurous! Take a look at my projects or my past work below and feel free to get in touch.`;
+//         display[i].style.textAlign = 'center';
+//     }
 
-    function defaultDisplay() {
-        display[i].textContent = 'Orland Oda';
-    }
+//     function defaultDisplay() {
+//         display[i].textContent = 'Orland Oda';
+//     }
 
-}
+// }
 
 
